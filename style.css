@@ -1,0 +1,236 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    position: relative;
+    width: 100%;
+}
+
+.slider-img {
+    width: 100%; /* Make the image responsive to the container width */
+    height: 100%; /* Ensure the image fits within the viewport height */
+    object-fit: contain; /* Maintain aspect ratio of the image */
+    display: block; /* Prevent inline spacing issues */
+    z-index: 1;
+}
+
+
+.btn {
+    border: none;
+    outline: none;
+    background-color: #888;
+    padding: 10px 30px;
+    font-size: 20px;
+    color: #ddd;
+    cursor: pointer;
+    margin: 10px auto;
+    display: flex;
+    justify-content: center;
+}
+
+.btn:hover {
+    background-color: #111;
+}
+
+/* .image {
+    width: 100%;
+    height: 100vh;
+} */
+
+.clock-btn {
+    position: absolute;
+    background-color: black;
+    width: 15px;
+    height: 15px;
+    top: 109px;
+    left: 312px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.backpack-btn {
+    width: 50px;
+    height: 50px;
+    background-color: rgb(130, 91, 91);
+    position: absolute;
+    top: 350px;
+    left: 295px;
+    border: none;
+    cursor: pointer;
+}
+
+.toolbox-btn {
+    width: 15px;
+    height: 12px;
+    background-color: black;
+    position: absolute;
+    top: 600px;
+    left: 270px;
+    border: none;
+    cursor: pointer;
+}
+
+.shows-btn {
+    width: 30px;
+    height: 6px;
+    background-color: rgb(42, 33, 33);
+    position: absolute;
+    top: 730px;
+    left: 287px;
+    border: none;
+    cursor: pointer;
+}
+
+.flowerpot-btn {
+    width: 30px;
+    height: 6px;
+    background-color: rgb(195, 122, 122);
+    position: absolute;
+    top: 770px;
+    left: 488px;
+    border: none;
+    cursor: pointer;
+}
+
+.picturefram-btn {
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    top: 330px;
+    right: 304px;
+    cursor: pointer;
+    border: none;
+    background-color: lightgreen;
+}
+
+.binder-btn {
+    position: absolute;
+    background-color: rgb(192, 192, 152);
+    width: 10px;
+    height: 13px;
+    top: 418px;
+    right: 258px;
+    cursor: pointer;
+    border: none;
+}
+
+.tableclock-btn {
+    position: absolute;
+    background-color: rgb(233, 233, 212);
+    width: 60px;
+    height: 6px;
+    top: 495px;
+    right: 317px;
+    cursor: pointer;
+    border: none;
+}
+
+.outdoor-btn {
+    position: absolute;
+    background-color: rgb(237, 237, 39);
+    width: 15px;
+    height: 15px;
+    border-radius: 10px;
+    top: 500px;
+    right: 615px;
+    cursor: pointer;
+    border: none;
+}
+
+.earthglobe-btn {
+    position: absolute;
+    background-color: rgb(233, 233, 212);
+    width: 30px;
+    height: 5px;
+    top: 615px;
+    right: 307px;
+    cursor: pointer;
+    border: none;
+}
+
+.drawer-btn {
+    position: absolute;
+    background-color: rgb(91, 91, 57);
+    width: 30px;
+    height: 6px;
+    top: 655px;
+    right: 303px;
+    cursor: pointer;
+    border: none;
+}
+
+.bigflowerpot-btn {
+    position: absolute;
+    background-color: rgb(226, 226, 200);
+    width: 30px;
+    height: 10px;
+    top: 590px;
+    right: 482px;
+    cursor: pointer;
+    border: none;
+}
+
+/* ======== Tooltip ======== */
+
+.tooltip .tooltiptext {
+    visibility: hidden;
+    width: 120px;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+    position: absolute;
+    z-index: 1;
+    bottom: 150%;
+    left: 50%;
+    margin-left: -60px;
+  }
+
+  .tooltip .tooltiptext::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: black transparent transparent transparent;
+  }
+  
+  .tooltip:hover .tooltiptext {
+    visibility: visible;
+  }
+
+  .container {
+    background-color: lightblue;
+    width: 310px;
+    height: 110px;
+    overflow: hidden;
+    position: absolute;
+    top: 40px;
+    right: 160px;
+  }
+
+  .zoomin-zoomout {
+    transform-origin: center;
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+  }
+
+  
+  .my_clock,
+  .my_backpack,
+  .my_toolbox,
+  .my_drawer,
+  .outdoor_btn,
+  .door_key {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
